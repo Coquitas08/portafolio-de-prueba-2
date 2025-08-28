@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio personal</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JAVA SCRIPT/javaScript.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo-title">
+                <img src="img/kirby-logo.png" alt="Logo">
+                <span class="titulo">Mi portafolio</span>
+            </div>
+            <nav class="sidebar">
+                <span class="sidebar-title">Menú</span>
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="mostrarSeccion('proyectos')">Proyectos</a></li>
+                    <li><a href="javascript:void(0)" onclick="mostrarSeccion('habilidades')">Habilidades</a></li>
+                    <li><a href="javascript:void(0)" onclick="mostrarSeccion('peliculas')">Películas</a></li>
+                    <li><a href="javascript:void(0)" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle light and dark mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z"/>
+                    <path d="M12 7a5 5 0 0 0-5 5c0 .175.011.346.024.515C8.118 13.916 9.944 15 12 15s3.882-1.084 4.976-2.485A5 5 0 0 0 12 7z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="contenido-principal">
+            <div class="sobre-mi">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.redbubble.com%2Fi%2Fart-board-print%2FSr-Pelo-by-meggyroarsCo%2F133112802.NVL2T&psig=AOvVaw0wjNHpaHil7O_euiImWMaW&ust=1754664361852000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCICD4Pb3-I4DFQAAAAAdAAAAABAE" alt="foto" class="foto-circular">
+                <h2 class="title-card">Sobre Mí</h2>
+                <p class="text-card">
+                    Mi nombre es Connie Gaitan Gutierrez. Tengo 17 años y actualmente estoy estudiando Informática Personal y Profesional en la E.E.S.T. N°6 "Chacabuco" Morón.
+                </p>
+                <img src="https://media.tenor.com/AN83u7YyqwUAAAAM/maxwell-the-cat.gif" alt="uiia" class="gif1">
+            </div>
+
+            <div class="secciones">
+                
+                <section id="proyectos" class="seccion">
+                    <div class="cuadro-seccion">
+                        <div class="cuadro-tp">
+                            <h2> Mis Proyectos</h2>
+
+                            <h3>1. Página Web de Recetario</h3>
+                            <p>Desarrollé un sitio web simple en HTML, CSS y JavaScript que permite guardar y visualizar recetas de cocina. Fue uno de mis primeros proyectos aplicando diseño responsivo y almacenamiento local con JavaScript.</p>
+
+                            <h3>2. Calculadora Básica</h3>
+                            <p>Utilizando JavaScript puro, realicé una calculadora funcional con operaciones básicas (suma, resta, multiplicación y división). Me ayudó a practicar manipulación del DOM y eventos.</p>
+
+                            <h3>3. Sistema de Login Local</h3>
+                            <p>Simulé un sistema de inicio de sesión para una página web, donde se validan credenciales desde un arreglo local. Este proyecto me permitió reforzar estructuras condicionales y funciones en JavaScript.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contacto" class="seccion">
+                    <div class="cuadro-seccion">
+                        <article>
+                            <h2>Contáctame</h2>
+                            <p>¡Me encantaría saber de ti! Llena el formulario a continuación para ponerte en contacto.</p>
+                
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="nombreCompleto">Nombre Completo:</label>
+                                    <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <button type="submit">Enviar Mensaje</button>
+                            </form>
+                        </article>
+                    </div>
+                </section>
+
+                <div id="mensajeAgradecimiento" class="mensaje-agradecimiento"></div>
+
+
+                <section id="habilidades" class="seccion">
+                    <div class="cuadro-seccion">
+                        <div class="habilidades-grid">
+                            <div class="cuadro-habilidad">
+                                <h3>Manejo de lenguajes de programacion</h3>
+                                <ul>
+                                    <li> - HTML (Intermedio)</li>
+                                    <li> - CSS (Intermedio)</li>
+                                    <li> - JavaScript (Básico)</li>
+                                    <li> - C++ (Basico)</li>
+                                </ul>
+                            </div>
+                            <div class="cuadro-habilidad">
+                                <h3>Idiomas</h3>
+                                <ul>
+                                    <li> - Español (Nativo)</li>
+                                    <li> - Inglés (Básico)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="peliculas" class="seccion">
+                    <div class="cuadro-seccion">
+                        <article class="pelicula-card">
+                            <img src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/Z-WHgqd_TeJxSuha8aZ5WpyLcX8/AAAABcuFa4DWW-nvKsSJ5wTPl-rmfnmtQnVri2jHS6ren6YXRlHoDah_OTqTxz8O0axtkYtzp4XdLncsnmhICUc1NFM641ZTahZ3sIJZ.jpg?r=2f1" alt="Peli1">
+                            <h3>WONDERLAND</h3>
+                            <p>La inteligencia artificial permite a las personas hablar con los seres queridos que han perdido. Jeong-in, una azafata de vuelo, pide reunirse con su novio Tae-joo, que está en coma.</p>
+                        </article>
+
+                        <article class="pelicula-card">
+                            <img src="https://i.ytimg.com/vi/r1u1zWsY4DU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA2MJXOzTDC9sha8EhJ9QcCPIZhdQ" alt="Peli2">
+                            <h3>JOHN WICK 1</h3>
+                            <p>En Nueva York, John Wick, un asesino a sueldo retirado, vuelve otra vez a la acción para vengarse de los gánsteres que le quitaron todo: El amor de su vida, su mascota e incluso su libertad..</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="nav-redes">
+            <ul class="redes-texto">
+                <li>
+                    <a href="https://www.instagram.com/leomessi/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="30" height="30">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Coquitas08" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=FFFFFF" alt="GitHub" width="30" height="30">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
